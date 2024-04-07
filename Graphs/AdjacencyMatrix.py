@@ -1,3 +1,4 @@
+
 from isBipartite import createAdjacencyList
 from DirectedDegrees import getVertexPairs
 
@@ -9,6 +10,7 @@ def adjacencyMatrix(vertexPairs):
     # Create a dictionary to map vertices to indices
     vertex_to_index = {vertex: index for index, vertex in enumerate(vertices)}
     # Initialize an empty matrix
+    
     matrix = [[0 for _ in vertices] for _ in vertices]
     # Fill the matrix
     for vertex, neighbors in adjacencyList.items():
